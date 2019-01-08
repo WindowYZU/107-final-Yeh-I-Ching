@@ -37,6 +37,10 @@ public class TaskFrame extends JInternalFrame {
         this.setSize(500, 300);
         //Q4: layout 出如圖所示的樣子，
         //記得 JTextArea 要放在捲軸裡面 (30%)
+
+        this.setLayout(new BorderLayout());
+        this.add(textTitle,"North");
+        this.add(textContent,"Center");
         ////////////////////////////
         this.setClosable(true);
         this.setResizable(true);
